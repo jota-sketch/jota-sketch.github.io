@@ -1,0 +1,71 @@
+body {
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* CARD */
+.card {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.2);
+    color: #f0f0f0;
+    animation: float 3s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.5);
+}
+
+/* FOTO */
+.card img {
+    border-radius: 50%;
+    border: 3px solid #00ff00;
+    margin-bottom: 15px;
+}
+
+/* TÍTULO */
+.card h1 {
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.card p {
+    font-style: italic;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.btn-tiktok {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #00ff00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* HOVER DO BOTÃO */
+.btn-tiktok:hover {
+    background-color: #00cc00;
+    transform: scale(1.08);
+}
